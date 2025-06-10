@@ -18,7 +18,7 @@ except Exception as e:
 
 # Load model
 try:
-    MODEL = tf.keras.models.load_model("../models/IDPfinal_model.keras")
+    MODEL = tf.keras.models.load_model("../models/IDPfinal_model(1).keras")
     output_shape = MODEL.output_shape[-1]
     assert output_shape == len(CLASS_NAMES), \
         f"Model output size ({output_shape}) does not match number of class names ({len(CLASS_NAMES)})"
